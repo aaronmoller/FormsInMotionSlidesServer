@@ -51,7 +51,7 @@ App.onLaunch = function(options) {
         "SearchController",
         "SlideshowController"
     ].map(
-        moduleName => `${baseURL}/js/${moduleName}.js`
+        moduleName => `${baseURL}js/${moduleName}.js`
     );
 
     // Show a loading spinner while additional JavaScript files are being evaluated
