@@ -43,16 +43,14 @@ App.onLaunch = function(options) {
 
     // Specify all the URLs for helper JavaScript files
     const helperScriptURLs = [
-        "DocumentLoader",
-        "DocumentController",
-        "ListController",
-        "MenuBarController",
-        "ModalController",
-        "SearchController",
-        "SlideshowController"
-    ].map(
-        moduleName => `${baseURL}js/${moduleName}.js`
-    );
+        "js/DocumentLoader.js",
+        "js/DocumentController.js",
+        "js/ListController.js",
+        "js/MenuBarController.js",
+        "js/ModalController.js",
+        "js/SearchController.js",
+        "js/SlideshowController.js"
+    ];
 
     // Show a loading spinner while additional JavaScript files are being evaluated
     const loadingDocument = createLoadingDocument();
